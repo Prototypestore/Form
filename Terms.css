@@ -133,70 +133,98 @@ NAV LINKS (DESKTOP/TABLET)
   }
 }
 
-/* ONLY targets the logo terms section inside <main> */
+/* =============================== */
+/* Logo Redesign Terms Section CSS */
+/* Mobile-first (default) */
+/* =============================== */
+
+/* Section container - mobile first */
 main #logo-terms {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px 30px;
+  max-width: 100%;
+  margin: 30px 15px;
+  padding: 25px 15px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   font-family: Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #1f2937;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Constrain all text */
+main #logo-terms h1,
+main #logo-terms h2,
+main #logo-terms p {
+  max-width: 350px;
+  width: 100%;
 }
 
 /* Title */
 main #logo-terms #title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #111827;
   border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
-/* Section headings */
+/* Headings */
 main #logo-terms h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #111827;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
 
 /* Paragraphs */
 main #logo-terms p {
-  font-size: 15px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
   color: #374151;
 }
 
-/* Better spacing flow */
+/* Space between heading and paragraph */
 main #logo-terms h2 + p {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
+/* Strong highlights */
+main #logo-terms strong {
+  color: #000;
+}
+
+/* =============================== */
+/* Tablet & Desktop adjustments */
+/* =============================== */
+@media (min-width: 600px) {
   main #logo-terms {
-    padding: 25px 20px;
-    margin: 30px 15px;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 30px;
   }
 
   main #logo-terms #title {
-    font-size: 22px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   main #logo-terms h2 {
-    font-size: 16px;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 8px;
   }
 
   main #logo-terms p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
-
 /* =========================
 FOOTER
 ========================= */
