@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form | Vx100Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">VX</div>
+</header>
+<main>
+  <form id="form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" required placeholder="Optional">
+    <label for="service">Service</label>
+    <select id="service" name="service" required>
+      <option value="" disabled selected>Select the service</option>
+      <option value="logo-redesign"Logo Redesign</option>
+    </select>
+    <label for="message">Additional Details</label>
+    <textarea id="message" name="message" placeholder="Any extra info..."></textarea>
+    <div id="form-message"></div>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+  <footer>
+  <div id="mail">
+    <a href="TermsConditions.html">Terms and Conditions</a>
+    <h2>WhatsApp</h2>
+    <a href="https://wa.me/27738519109" target="_blank">+27 073 851 9109</a>
+  </div>
+  <p>© 2025 Vx100Hub. All Rights Reserved.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
