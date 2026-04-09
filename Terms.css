@@ -133,6 +133,70 @@ NAV LINKS (DESKTOP/TABLET)
   }
 }
 
+/* ONLY targets the logo terms section inside <main> */
+main #logo-terms {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+/* Title */
+main #logo-terms #title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+/* Section headings */
+main #logo-terms h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Paragraphs */
+main #logo-terms p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+/* Better spacing flow */
+main #logo-terms h2 + p {
+  margin-top: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  main #logo-terms {
+    padding: 25px 20px;
+    margin: 30px 15px;
+  }
+
+  main #logo-terms #title {
+    font-size: 22px;
+  }
+
+  main #logo-terms h2 {
+    font-size: 16px;
+  }
+
+  main #logo-terms p {
+    font-size: 14px;
+  }
+}
+
 /* =========================
 FOOTER
 ========================= */
